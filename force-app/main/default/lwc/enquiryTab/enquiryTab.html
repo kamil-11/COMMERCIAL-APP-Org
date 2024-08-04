@@ -1,0 +1,18 @@
+<template>
+<lightning-card icon-name="custom:custom86" title="Enquiry Questionaires">
+   <!--  <h3 slot="title">
+        <lightning-icon icon-name="custom:custom86" size="medium"></lightning-icon>
+        icon-name="custom:custom86"
+         <span class="slds-var-m-left_medium">Enquiry Questionaires</span> 
+    </h3> -->
+    <lightning-record-form 
+    object-api-name="Enquiry__c"
+    onsuccess={succesHandler}
+    mode="edit"
+    layout-type="Full"
+    columns="2"
+    ></lightning-record-form>
+    <!-- <div slot="footer">  
+</div> -->
+</lightning-card>
+</template>

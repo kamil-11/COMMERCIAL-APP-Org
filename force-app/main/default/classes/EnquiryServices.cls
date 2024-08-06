@@ -1,4 +1,18 @@
+/* 
+    @author	Kamil kamran
+    @date	05/08/2024
+    @group	EQNUIRY_SYNCHRONIZATIONS
+    @description This is Callout Service Service In Commercial App to callout to a Enquiry WebService exposed through connected app of MedicalApp, 
+    Intact Functionality of the Server Side data Validation which is the enquiry record saved on the front end and the Queueable Interface 
+    Callout service to handle vloumes.Desgin facilitates Same Queueable Service to be used later to expand and scale from other Application or large volume process.
+    @version 1.0
+     */
+    // Status :-) Deployed
 public class EnquiryServices {
+    /*
+     Method serves as the Controller for Data synchronization EVENT and gateway for the Queueable service to call
+     To medical org to post new enquiry in real Time.
+    */
     Public Static Void PostEnquiryService(List<Enquiry__c> latestEnquiry)
     {
         Set<Id> EnquiryIds = new Set<id>();
@@ -23,6 +37,11 @@ public class EnquiryServices {
                 System.enqueueJob(new QueueableEnquiryServices(EnquiryWrapper)); 
 
     }
+
+    /*
+    Queueble Service To Make Http Request to Medical Org,  
+    This class can handle large volume of records large amount of processes and internal and external. 
+    */
     Public Class QueueableEnquiryServices implements Queueable, Database.AllowsCallouts {
         
         private String test;
@@ -87,6 +106,9 @@ public class EnquiryServices {
         }
         }
     }
+    /*
+    User defined Apex Object to describe Enquiry + Doctor's Informations.
+    */
     public Class EnquiryRecordDescriptor{
         private String EnquiryId;
         private String Name;

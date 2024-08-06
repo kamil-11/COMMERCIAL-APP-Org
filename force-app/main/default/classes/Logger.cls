@@ -1,7 +1,8 @@
 /**
   * For logging at an instance level
-  * @author mike lockett
+  * @author kamil //Inspired by Mike lockett
   * @date 2019-01-15
+  * Curated for Use case on 05/08/24
  */
 
  global without sharing class Logger implements  {

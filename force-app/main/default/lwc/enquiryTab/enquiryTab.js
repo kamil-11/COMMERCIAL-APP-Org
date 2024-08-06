@@ -10,12 +10,12 @@ import  STATUS_FIELD  from '@salesforce/schema/Enquiry__c.Status__c';
 //import LOGO from '@salesforce/resourceUrl/KomodoLogo';
 export default class EnquiryTab extends LightningElement {
 
-    /* logoUrl = `${LOGO}/KomodoLogo.jpeg`;
+    /* 
     QuestionProp= 'Sample Questions Here !'; */
 
     objectName =ENQUIRY_OBJECT;
     //@api fieldList =[NAME_FIELD,MEDICINE_FIELD,PHYSICIAN_FIELD,CHANNEL_FIELD,QUERY_FIELD,STATUS_FIELD,
-       // { fieldApiName: 'Medicine__c', objectApiName: 'Enquiry__c' }];
+       // { fieldApiName: 'Medicine__c', objectApiName: 'Enquirßy__c' }];
     
 
     succesHandler(event)

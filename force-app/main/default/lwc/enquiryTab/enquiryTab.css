@@ -7,7 +7,7 @@
 
 .sloganStyle{
     font-family:monospace;
-    background-color: aliceblue;
+    background-color: rgb(223, 229, 235);
 }
 
 .footerStyling{
@@ -15,4 +15,5 @@
 }
 .TMStyling{
     color:coral;
+    font-size: medium;
 }

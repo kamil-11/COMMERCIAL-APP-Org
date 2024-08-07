@@ -30,4 +30,14 @@ export default class EnquiryTab extends LightningElement {
         const editForm = this.template.querySelector('lightning-record-form');
         editForm.recordId = null;
     }
+    errorHandler(event)
+    {
+        const payload = event.detail;
+        console.log(JSON.stringify(payload));
+        const errortoast = new ShowToastEvent({
+            title:"Error Occured while saving record",
+            message:"Could not save the record Please check the Details",
+            variant:"error"
+        })
+    }
 }

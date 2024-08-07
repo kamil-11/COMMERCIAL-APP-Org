@@ -4,7 +4,7 @@
         <lightning-icon icon-name="custom:custom86" size="medium"></lightning-icon>
          <span class="slds-var-m-left_medium">Inquiry Questionaires</span> 
     </h3> 
-    <div class="slds-text-font_monospace slds-text-heading_large slds-var-m-top_medium slds-var-m-left_x-large"> <p class="myCss">Komodo</p> </div>
+    <div class="slds-text-font_monospace slds-text-heading_large slds-var-m-top_medium slds-var-m-left_x-large"> <p class="myCss">Komodo™</p> </div>
     <div class="slds-text-heading_small slds-var-m-left_x-large"> <p class="sloganStyle">Reducing the Global Burden of Disease.</p> </div>
          <p class="slds-text-body_small slds-var-m-left_x-large slds-text-color_inverse-weak slds-text-body_regular slds-var-m-top_xx-small">Complete the details below and Capture the information to Send it to Medical information agent for review.</p>
          <p class="slds-text-body_small slds-var-m-left_x-large slds-text-color_inverse-weak slds-text-body_regular">Please Complete all the information for efficient Sync and process.</p>
@@ -13,14 +13,16 @@
     <div class="slds-border_top"><lightning-record-form 
     object-api-name="Enquiry__c"
     onsuccess={succesHandler}
+    onerror={errorHandler}
     mode="edit"
     layout-type="Full"
     columns="2"
     ></lightning-record-form> 
 </div>
      <div slot="footer">  
+          <div class="slds-text-heading_small slds-var-m-left_x-large slds-var-m-bottom_small"> <p>Komodo™ Health</p> </div>
           <div class="footerStyling"><p class="slds-align_absolute-center slds-text-body_small slds-var-m-left_x-large slds-text-color_inverse-weak">Komodo Health believes that smarter, more innovative uses of technology are essential for reducing the burden of disease, and we’re dedicated to solving the wickedly hard challenges that no one else can.</p>
-               <p class="slds-align_absolute-center slds-text-body_small slds-var-m-left_x-large slds-text-color_inverse-weak">For Technical Assistance Please Reach Out to  <a class="slds-var-m-left_small" href="www.Example.com"> SF.KOMODO@Example.com</a> </p>
+               <p class="slds-align_absolute-center slds-text-body_small slds-var-m-left_x-large slds-text-color_inverse-weak">For Technical Assistance Please Reach Out to  <a class="slds-var-m-left_small" href="www.Example.com"> KOMODOHealth@SF.com</a> </p>
                <p class="slds-align_absolute-center slds-text-body_small slds-var-m-left_x-large slds-text-color_inverse-weak"> <span class="TMStyling">©</span>2024 Komodo Health, Inc. All rights reserved.</p>   
           </div>
      </div>

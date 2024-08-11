@@ -1,0 +1,16 @@
+<template>
+    <lightning-card class="slds-var-m-around_medium" title="APEX wired">
+        <div class="slds-var-m-around_medium">
+            <template if:true={Contact.data}>
+                <template for:each={Contact.data} for:item="contact">
+                    <div class="slds-box" key={contact.key}>
+                        <p><Strong>Name - </Strong>  {contact.id}</p>
+                        <p><Strong>Email - </Strong>  {contact.Email}</p>
+                        <p><Strong>phone - </Strong>  {contact.phone}</p>
+                        <p><Strong>Account - </Strong>  {contact.accountid}</p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

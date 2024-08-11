@@ -2,8 +2,8 @@
 @author	Kamil kamran
 @date	05/08/2024
 @group	EQNUIRY_SYNCHRONIZATIONS
-@description Enquiry Status WebService used for Sync from Medical App. In-line deserializing functionality for small fetch and storing 
-             new changed status from medical org and update the status on the same record locally.   
+@description Enquiry Status WebService used for Sync from Medical App. In-line deserializing functionality for small fetching and storing 
+             fetching new chnaged status from medical org and update the status on the same record locally.   
     @version 1.0
      */
     // Status :-) Deployed
@@ -31,9 +31,6 @@ global with sharing class EnquiryStatusService {
         sp = Database.setSavepoint(); 
         update EnquiryRecord;
            }
-           /*
-           Setting the personilzed responses for the Client to have the Retry logic Upon failed Requests 
-           */
            catch(exception e)
            {
             system.debug('Ran into ' + e + 'caused by - ' + e.getMessage());

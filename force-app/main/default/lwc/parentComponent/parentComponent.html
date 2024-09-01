@@ -1,0 +1,10 @@
+<template>
+    <lightning-card class="slds-var-m-around_medium" title="Parent Sample Communications">
+        <div class="slds-var-m-around_medium">
+            Hey there!
+        </div>
+        <c-child-component message="parent Component says high" onremove={removeHandler}></c-child-component>
+        <lightning-button label="Send Details" variant="Brand" title="Send Details"
+            onclick={sendHandler}></lightning-button>
+    </lightning-card>
+</template>

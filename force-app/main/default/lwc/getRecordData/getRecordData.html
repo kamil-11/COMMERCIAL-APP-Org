@@ -1,0 +1,14 @@
+<template>
+    <lightning-card class="slds-var-m-around_medium" title="Account Record Data">
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={accountRecordData}>
+
+                <p class="slds-text-color_success"> <strong>Name - </strong> {accountRecordData.Name.value}</p>
+                <p class="slds-text-color_success"> <strong>Annual Revenue - </strong>
+                    {accountRecordData.AnnualRevenue.value} </p>
+                <p class="slds-text-color_success"> <strong>Type - </strong> {accountRecordData.Type.value}</p>
+                <p class="slds-text-color_success"> <strong>Industry - </strong> {accountRecordData.Industry.value} </p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,24 @@
+<template>
+    <lightning-card class="slds-var-m-around_medium" title="Wired Apex Method">
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={enquiryList}>
+                <template for:each={enquiryList} for:item="enquiry">
+                    <div class="slds-box" key={enquiry.Id}>
+                        <p><strong>Name : </strong> enquiry.Name</p>
+                        <p><strong>Medical Center : </strong> enquiry.Medical_Center__c</p>
+                        <p><strong> Physician : </strong> enquiry.Physician__c</p>
+                        <p><strong>Medicine : </strong> enquiry.Medicine__c</p>
+                        <p><strong>Response Channel Prefferred : </strong> enquiry.Preferred_Response_Channel__c</p>
+                        <p><strong>Questions : </strong> enquiry.Question_Record__c</p>
+                        <p><strong>Medical Center : </strong> enquiry.Medical_Center__c</p>
+                        <p><strong>Status : </strong> enquiry.Status__c</p>
+                        <p><strong>Physician Contact Number : </strong> enquiry.Physician_Number__c</p>
+                    </div>
+                </template>
+            </template>
+            <template lwc:else>
+                <p>An error occured fetching Enquiries</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

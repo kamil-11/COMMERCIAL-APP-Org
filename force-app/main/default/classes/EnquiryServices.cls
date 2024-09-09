@@ -81,7 +81,6 @@ public class EnquiryServices{
 
             try{
                 response = http.send(request);
-
                 System.debug(response.getStatus());
             } catch (exception e){
                 system.debug(e.getMessage());
